@@ -214,6 +214,14 @@ section
     font-size: 16px;
     border: none;
   }
+  .dropbtn{
+    background-color:transparent;
+    margin-right: 30px;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+    font-weight: 600;
+  }
   
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
