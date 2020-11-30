@@ -25,3 +25,15 @@ $(document).ready(function(){
   
 })
   });
+
+
+  //about_us validate newsletter
+
+  var emailField = document.getElementById("emailField");
+  var button = document.getElementById("button");
+  var response = document.getElementById("response");
+  
+  function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
