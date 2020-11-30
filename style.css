@@ -15,8 +15,14 @@ font-family: 'PT Sans', sans-serif;
 
 .logo {
     margin-left: 0;
+<<<<<<< HEAD
     width: 15%;
     float: left;
+=======
+    width: 50%;
+    float: left;
+    padding-top: 0;
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
   
 }
 .logotype {
@@ -65,11 +71,50 @@ font-family: 'PT Sans', sans-serif;
     padding-top: 1px;
     position: absolute;
 }
+<<<<<<< HEAD
+=======
+
+/* Container needed to position the button. Adjust the width as needed */
+.home{
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.home img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.home .btn {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.home .btn:hover {
+  background-color: black;
+}
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
 /* Slideshow container */
 .slideshow-container {
     max-width: 50%;
     position: relative;
     margin: auto;
+<<<<<<< HEAD
+=======
+    top: 90px;
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
   }
    
   /* Hide the images by default */
@@ -180,12 +225,26 @@ section
     font-size: 16px;
     border: none;
   }
+<<<<<<< HEAD
+=======
+  .dropbtn{
+    background-color:transparent;
+    margin-right: 30px;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+    font-weight: 600;
+  }
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
   
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display: inline-block;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -193,8 +252,12 @@ section
     display: none;
     position: absolute;
     background-color: #f1f1f1;
+<<<<<<< HEAD
     min-width: 110px;
     
+=======
+    min-width: 160px;
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -202,7 +265,11 @@ section
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
+<<<<<<< HEAD
     padding: 5px 13px;
+=======
+    padding: 12px 16px;
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
     text-decoration: none;
     display: block;
   }
@@ -211,12 +278,20 @@ section
   .dropdown-content a:hover {background-color: #ddd;}
   
   /* Show the dropdown menu on hover */
+<<<<<<< HEAD
   .dropdown:hover .dropdown-content {display: block; }
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {border-bottom: 2px solid #e01533;
     
     color: #e01533;}
+=======
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #f72464;}
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
 footer
  {
   position: relative;
@@ -224,8 +299,11 @@ footer
   width: 100%;
   /*height: 0;*/
   text-align: center;
+<<<<<<< HEAD
   display: flex;
     
+=======
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
  }
  #addcont
  {
@@ -285,11 +363,27 @@ footer
   }
 }
 /* Add some shadows to create a card effect */
+<<<<<<< HEAD
 .card {
   box-shadow: 0 8px 12px 0 rgba(199, 31, 31, 0.2);
 }
  
 
+=======
+
+ 
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+ 
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
  
 .title {
   color: grey;
@@ -365,8 +459,12 @@ color: red;
 .swiper-container {
   width: 100%;
   height: 100vh;
+<<<<<<< HEAD
   margin-top: 28px;
   
+=======
+  top: 10px;
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
 }
 
 .slide-left{
@@ -428,11 +526,17 @@ color: red;
 }
 
 .card{
+<<<<<<< HEAD
   margin-top: 20px;
 text-align: center;
 border-radius: 20px;
 box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
 min-height: 300px;
+=======
+text-align: center;
+border-radius: 20px;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
 
 }
 .card__image{
@@ -595,6 +699,14 @@ FOOTER
   }
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
 /*
 
 About US
@@ -644,6 +756,7 @@ About US
 
 
 }
+<<<<<<< HEAD
 
 
 
@@ -787,3 +900,5 @@ CART
 
 
 
+=======
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d

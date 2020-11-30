@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /*
 function addCart(){
@@ -114,3 +115,32 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
+=======
+var viewportHeader = document.querySelector(".viewport-header");
+
+document.body.addEventListener("scroll", function(event) {
+  var opacity = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;
+  var scale = (document.body.offsetHeight - document.body.scrollTop) / document.body.offsetHeight;
+  document.documentElement.style.setProperty('--headerOpacity', opacity);
+  document.documentElement.style.setProperty('--headerScale', scale);
+});
+
+$(document).ready(function(){
+    
+    var mySwiper = new Swiper('.swiper-container', {
+  
+  
+  loop: true,
+  effect:'fade',
+  speed: 1500,
+
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+})
+  });
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d

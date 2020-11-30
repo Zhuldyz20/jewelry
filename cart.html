@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,4 +104,189 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   
 </body>
+=======
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="bootstrap//css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="fontawesome/fontawesome-free-5.15.1-web/css/all.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="cart.css" rel="stylesheet">
+  <script src="cart.js" type="script"></script>
+  <title>Shopping Cart</title>
+</head>
+
+<body>
+  
+  <nav class = "nav-wrapper">
+    <div class="container">
+        <div class="row">
+    <div class="col-md-2">
+    
+      <div class="logo">
+        <img src="images/b-removebg-preview.png" alt="" class="logotype" style="max-width: 115px;">
+    </div>
+    </div>
+        <div class= "col-md-9">
+    <div class="nav-menu">
+      
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about_us.html" class="nav-link">About us</a>
+        <div class="dropdown">
+                    <button class="dropbtn">Shopping</button>
+                    <div class="dropdown-content">
+                        <a href="rings.html" class="nav-link">Rings</a>
+                        <a href="bracelet.html" class="nav-link">Bracelets</a>
+                        <a href="earrings.html" class="nav-link">Earings</a>
+                        <a href="rings.html" class="nav-link">Best Sellers</a>
+                        <a href="rings.html" class="nav-link">Under 50</a>
+                        <a href="rings.html" class="nav-link">Sale</a>
+                        <a href="rings.html" class="nav-link">Best Gifts</a>
+                        <a href="rings.html" class="nav-link">Black Friday</a>
+                    </div>
+                  </div>
+                <a href="#" class="nav-link">Cart</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+                
+      
+        </div>
+    </div>
+        <div class = "col-md-1">
+
+        <div class ="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <div class = "cart_number">3</div>
+         </div>
+         
+        </div>
+        
+    </div>
+    </div>
+
+</nav>
+  
+  <main>
+    <div class="basket">
+
+      <div class="basket-module">
+        <label for="promo-code">Enter a promotional code</label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Apply</button>
+      </div>
+
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+      
+      <div class="basket-product">
+
+        <div class="item">
+          <div class="product-image">
+            <img src="images/contact.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong>Diamond</strong> Studded Ring</h1>
+            <p><strong>Size 12</strong></p>
+            <p>Product Code - 2323</p>
+          </div>
+        </div>
+        
+        <div class="price">5000.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">20000.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      
+      </div>
+      
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="images/diamond.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong>Diamond</strong> Ring</h1>
+            <p><strong>Size 10</strong></p>
+            <p>Product Code - 2300</p>
+          </div>
+        </div>
+        <div class="price">3000.00</div>
+        <div class="quantity">
+          <input type="number" value="2" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">6000.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Items in your Cart</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">26000.00</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+              <option value="0" selected="selected">Select Delivery</option>
+             <option value="first-class">Standard</option>
+             <option value="second-class">Fast</option>
+             <option value="signed-for">Special Delivery</option>
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">26000.00</div>
+        </div>
+        <div class="summary-checkout">
+          <button class="checkout-cta">Secure Checkout</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+  
+  <div id="circle"></div>
+  <footer class = "footer">
+    <div class= "container">
+      <div class="footer-nav">
+          <a href="contact.html" class="footer-nav__link">CONTACT US</a>
+      </div>
+
+      <div class="footer__social">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" ></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter" ></i></a>
+          <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest-p" ></i></a>
+
+
+      </div>
+      
+      <div class="footer__copyright">Copyright. All Rights Reserved</div>
+
+    </div>
+
+</footer>
+</body>
+
+>>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
 </html>

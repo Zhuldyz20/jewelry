@@ -1,0 +1,145 @@
+.dropbtn{
+  background-color:transparent;
+  margin-right: 30px;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+  transition: .3s;
+  font-weight: 600;
+}
+
+
+
+
+/* Three columns side by side */
+
+
+.column {
+    float: left;
+    width: 15%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+   
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  /* Add some shadows to create a card effect */
+  
+   
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+   
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+   
+  .title {
+    color: grey;
+  }
+   
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+   
+  .button:hover {
+    background-color: rgb(83, 4, 4);
+  }
+
+  .row{
+    margin-bottom: 16px;
+
+  }
+ 
+  body{
+      background-image: url(background_rings.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+
+
+  /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+ 
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+  .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+  }
+  
+  .fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      height: 300%;
+      top: -100%;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      width: 300%;
+      left: -100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .fullscreen-bg {
+      background: url('../img/videoframe.jpg') center center / cover no-repeat;
+    }
+  
+    .fullscreen-bg__video {
+      display: none;
+    }
+  }
