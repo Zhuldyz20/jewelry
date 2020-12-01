@@ -37,3 +37,14 @@ $(document).ready(function(){
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   }
+
+  //google maps
+  function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(50.670116425,-120.364883423),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+ 
+  

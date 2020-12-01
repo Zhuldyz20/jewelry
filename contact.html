@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="bootstrap//css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="fontawesome/fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="contact.css">
-    <script src="script.js" defer></script>
+    <script src="script.js" defer async></script>
     <title>About us</title>
 </head>
 <body>   
@@ -41,7 +41,7 @@
                             <a href="rings.html" class="nav-link">Black Friday</a>
                         </div>
                       </div>
-                    <a href="#" class="nav-link">Cart</a>
+                    <a href="cart.html" class="nav-link">Cart</a>
             <a href="contact.html" class="nav-link">Contact</a>
                     
           
@@ -70,12 +70,12 @@
         <div class="centered">
             <div class="column">
                 <form action="formaction.html">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="fname">First Name*</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
                   <label for="lname">Last Name</label>
                   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
+                  <label for="country">Country*</label>
+                  <select id="country" name="country" required>
                     <option value="australia">Canada</option>
                     <option value="canada">USA</option>
                     <option value="usa">UK</option>
@@ -89,30 +89,30 @@
       </div>
       
     </div>
+
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcHbALEg-JLIDRfZZmaKub-4bP1LOxqok&callback=myMap"></script>
+
   
     <footer class = "footer">
-        <div class= "container">
-          <div class="footer-nav">
-              <a href="" class="footer-nav__link">YOUR ACCOUNT</a>
-              <a href="" class="footer-nav__link">CONTACT US</a>
-              <a href="" class="footer-nav__link">TERMS OF SERVICE</a>
-    
-    
-          </div>
-    
-          <div class="footer__social">
-              <a href="#"><i class="fab fa-facebook-f" ></i></a>
-              <a href="#"><i class="fab fa-instagram" ></i></a>
-              <a href="#"><i class="fab fa-twitter" ></i></a>
-              <a href="#"><i class="fab fa-pinterest-p" ></i></a>
-    
-    
-          </div>
-          
-          <div class="footer__copyright">Copyright. All Rights Reserved</div>
-    
+      <div class= "container">
+        <div class="footer-nav">
+            <a href="contact.html" class="footer-nav__link">CONTACT US</a>
         </div>
-    
-    </footer>
+  
+        <div class="footer__social">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" ></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter" ></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest-p" ></i></a>
+  
+  
+        </div>
+        
+        <div class="footer__copyright">Copyright. All Rights Reserved</div>
+  
+      </div>
+  
+  </footer>
 </body>
 </html>
