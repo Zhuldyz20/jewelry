@@ -69,6 +69,7 @@
     <link rel="stylesheet" href="fontawesome/fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="about_us.css">
     <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>About us</title>
 </head>
 <body>
@@ -254,25 +255,35 @@
                 aliquid amet corrupti non ullam tempore, doloremque iure.</div>
 =======
             <div class = "description">Do you want to be the first one to know about the new collections? </div>
+            <div class="main">
+                <form action="formaction.html" method="post">
                 <div class="container" style="background-color:#fcf3ee;">
-                    <input type="text" placeholder="Name" name="name" required>
-                    <input type="text" placeholder="Email address" name="mail" required>
+                    <label for="title">Name*</label>
+                    <input type="text" placeholder="Name*" name="name" required>
+                    <label for="title">Email Address*</label>
+                    <input type="email" placeholder="Email address*" is="emailField" required>
                     <label>
                       <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
                     </label>
+                    <button id="button">Subscribe</button>
+                    <div id="response"></div>
+                   </div>
                   </div>
+<<<<<<< HEAD
                 
                   <div class="container">
                     <input type="submit" value="Subscribe">
                   </div>
                 </form>
 >>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
+=======
+                </div>
+                  
+>>>>>>> b42a82a935241c0e37620d4c28f02e01759e42c4
         
         </div>
-    </div>
+   
 
-    
-</div>
 
 <<<<<<< HEAD
 
