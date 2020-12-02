@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 /*
 function addCart(){
@@ -115,7 +114,7 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
-=======
+
 var viewportHeader = document.querySelector(".viewport-header");
 
 document.body.addEventListener("scroll", function(event) {
@@ -143,9 +142,7 @@ $(document).ready(function(){
   
 })
   });
-<<<<<<< HEAD
->>>>>>> 29a346ba4e3f1c44de5424ab260be2c7083d676d
-=======
+
 
 
   //about_us validate newsletter
@@ -158,7 +155,7 @@ $(document).ready(function(){
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   }
-<<<<<<< HEAD
+
 
   //google maps
   function myMap() {
@@ -170,6 +167,4 @@ $(document).ready(function(){
     }
  
   
-=======
->>>>>>> b42a82a935241c0e37620d4c28f02e01759e42c4
->>>>>>> e0e3129bdcf36b28799f69d0f4150945daa7b92f
+
